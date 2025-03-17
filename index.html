@@ -2,403 +2,590 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DropBags Perth | Luggage Storage for FIFO & Travelers</title>
+    <title>Coffeto Coffee Guide</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3e27283071.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header id="header">
+    <header>
         <div class="container">
-            <div class="logo">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="40" height="40" rx="8" fill="#2E86AB"/>
-                    <rect x="10" y="15" width="20" height="18" rx="3" fill="#F49F0A"/>
-                    <rect x="15" y="12" width="10" height="4" rx="2" fill="#F49F0A"/>
-                    <circle cx="16" cy="22" r="2" fill="#ffffff"/>
-                    <circle cx="24" cy="22" r="2" fill="#ffffff"/>
-                    <path d="M16 28C18 30 22 30 24 28" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-                <span>DropBags Perth</span>
-            </div>
+            <h1><span class="coffeto-brand">Coffeto</span> Coffee Guide</h1>
             <nav>
-                <ul class="nav-menu">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#about">About Us</a></li>
+                <ul>
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#coffee-basics">Coffee Basics</a></li>
+                    <li><a href="#cultivation">Cultivation</a></li>
+                    <li><a href="#brewing-guide">Brewing Guide</a></li>
+                    <li><a href="#roast-types">Roast Types</a></li>
+                    <li><a href="#tasting-notes">Tasting Notes</a></li>
+                    <li><a href="#my-products">My Products</a></li>
+                    <li><a href="#glossary">Glossary</a></li>
                 </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="hero">
+    <section id="intro" class="intro">
         <div class="container">
-            <div class="hero-content">
-                <h1>Luggage Sorted for FIFO & Travelers</h1>
-                <p>Safe, affordable storage while you work or explore Perth. No hassles, no worries!</p>
-                <a href="#contact" class="btn btn-primary">Book Now <i class="fas fa-arrow-right"></i></a>
+            <div class="intro-content">
+                <h2>Welcome to the <span class="coffeto-brand">Coffeto</span> Experience</h2>
+                <p>Ah, coffee! That magical elixir that transforms groggy mornings into productive days. Welcome to your delightful journey into the wonderful world of coffee!</p>
+                <p>Here at <span class="coffeto-brand">Coffeto</span>, we don't just sell coffee – we craft experiences, cup by cup. Our passion is bringing the finest artisanal coffee to Perth, lovingly roasted to perfection and ready to transport your taste buds to the Colombian highlands.</p>
+                <p>So grab your favorite mug, get comfy, and let's embark on this aromatic adventure together! Whether you're a coffee newbie or a seasoned sipper, there's always something new to discover in the rich, complex universe of coffee.</p>
             </div>
-            <div class="hero-image">
-                <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Perth skyline silhouette -->
-                    <rect x="0" y="0" width="500" height="400" fill="#2E86AB" opacity="0.2"/>
-                    <path d="M0,220 L50,220 L60,180 L80,210 L100,190 L120,220 L140,200 L160,220 L180,170 L200,220 L230,180 L260,220 L280,200 L300,220 L320,190 L340,220 L360,180 L380,220 L400,200 L420,220 L450,170 L480,220 L500,220 L500,400 L0,400 Z" fill="#2E86AB" opacity="0.7"/>
-                    
-                    <!-- Luggage illustrations -->
-                    <rect x="150" y="250" width="60" height="80" rx="5" fill="#F49F0A"/>
-                    <rect x="160" y="240" width="40" height="10" rx="5" fill="#F49F0A"/>
-                    <circle cx="170" cy="280" r="5" fill="#fff"/>
-                    <circle cx="190" cy="280" r="5" fill="#fff"/>
-                    
-                    <rect x="250" y="280" width="80" height="60" rx="5" fill="#30C5FF"/>
-                    <rect x="270" y="270" width="40" height="10" rx="5" fill="#30C5FF"/>
-                    <circle cx="270" cy="310" r="5" fill="#fff"/>
-                    <circle cx="310" cy="310" r="5" fill="#fff"/>
-                    
-                    <!-- Person silhouette -->
-                    <circle cx="350" cy="210" r="20" fill="#2A2B2A"/>
-                    <path d="M350,230 L350,290 M330,250 L370,250 M350,290 L330,340 M350,290 L370,340" stroke="#2A2B2A" stroke-width="10" stroke-linecap="round"/>
+            <div class="intro-image">
+                <svg class="coffee-icon" viewBox="0 0 24 24">
+                    <path d="M2,21V19H20V21H2M20,8V5H18V8H20M20,3A2,2 0 0,1 22,5V8A2,2 0 0,1 20,10H18V13A4,4 0 0,1 14,17H8A4,4 0 0,1 4,13V3H20M16,5H6V13A2,2 0 0,0 8,15H14A2,2 0 0,0 16,13V5Z" />
                 </svg>
             </div>
         </div>
     </section>
 
-    <section id="services" class="services">
+    <section id="coffee-basics" class="coffee-basics">
         <div class="container">
-            <h2>How We've Got You Sorted</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-suitcase"></i>
-                    </div>
-                    <h3>Traveler Storage</h3>
-                    <p>Exploring Perth? Pop your bags here! Short-term storage perfect for tourists and day-trippers.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-hard-hat"></i>
-                    </div>
-                    <h3>FIFO Worker Solutions</h3>
-                    <p>On shift? We'll keep your gear safe. Long-term options tailored to your roster cycle.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <h3>Vehicle Storage</h3>
-                    <p>Cars, bikes, and more - secure parking while you're away on shift or holiday.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>24/7 Security</h3>
-                    <p>Sleep easy knowing your belongings are monitored around the clock. Top-notch security is our promise.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <h2>Simple, Fair Rates</h2>
-            <p class="section-desc">Affordable rates, no stress! Choose what works for your schedule.</p>
+            <h2>Coffee Basics</h2>
             
-            <div class="pricing-calculator">
-                <div class="calculator-options">
-                    <h3>Quick Price Check</h3>
-                    <div class="form-group">
-                        <label for="storage-type">What are you storing?</label>
-                        <select id="storage-type">
-                            <option value="small">Small Bag/Backpack</option>
-                            <option value="medium">Medium Suitcase</option>
-                            <option value="large">Large Luggage</option>
-                            <option value="vehicle">Vehicle</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="storage-duration">How long?</label>
-                        <select id="storage-duration">
-                            <option value="daily">Daily (1-6 days)</option>
-                            <option value="weekly">Weekly (7-29 days)</option>
-                            <option value="monthly">Monthly (30+ days)</option>
-                        </select>
-                    </div>
-                    <button id="calculate-btn" class="btn btn-secondary">Calculate Price</button>
-                </div>
-                <div class="price-display">
-                    <h3>Estimated Price</h3>
-                    <div class="price" id="price-result">$--</div>
-                    <p>Final price may vary based on specific requirements.</p>
-                    <a href="#contact" class="btn btn-primary">Book Now</a>
-                </div>
+            <div class="subsection">
+                <h3>The Coffee Journey</h3>
+                <p>Imagine standing in a misty Colombian mountain plantation at dawn, as farmers carefully select perfectly ripe, ruby-red coffee cherries. Each cherry contains two beans - the seeds of your morning delight - beginning their remarkable transformation from fruit to the aromatic brew in your cup.</p>
+                <p>Like all great stories, coffee's tale is one of transformation, patience, and craft. From the careful nurturing of coffee trees that take years to mature, to the precise roasting that unlocks hundreds of complex flavor compounds - every step matters in creating that perfect cup that makes you smile with the first sip.</p>
             </div>
             
-            <div class="pricing-cards">
-                <div class="price-card">
-                    <div class="price-icon"><i class="fas fa-hiking"></i></div>
-                    <h3>Travelers</h3>
-                    <div class="price-tag">From $8/day</div>
+            <div class="subsection">
+                <h3>Origin</h3>
+                <p>Coffee cultivation is concentrated in what's known as the "Coffee Belt" or "Bean Belt," a region between the Tropics of Cancer and Capricorn that provides ideal growing conditions: rich soil, mild temperatures, and frequent rain with interspersed sunshine.</p>
+                
+                <div class="coffee-map-container">
+                    <h4 class="coffee-map-title">Interactive World Coffee Map</h4>
+                    <p class="coffee-belt-label">The Coffee Belt - approximately 25° North to 30° South of the equator</p>
+                    <div class="map-interactive" id="world-coffee-map">
+                        <!-- Interactive map will be rendered with JavaScript -->
+                    </div>
+                    <div class="region-info">
+                        <h4 id="region-name">Coffee Growing Regions</h4>
+                        <p id="region-notes">Hover over a region on the map to learn about its coffee characteristics.</p>
+                    </div>
+                </div>
+                
+                <h4>Major Coffee Growing Regions</h4>
+                <ul>
+                    <li><strong>South America</strong>: 
+                        <ul>
+                            <li><strong>Colombia</strong>: Known for balanced acidity, rich flavor, and medium body. Our signature beans come from the highlands of Colombia, where ideal growing conditions create exceptional coffee with notes of chocolate, caramel, and subtle fruit.</li>
+                            <li><strong>Brazil</strong>: The world's largest producer, accounting for about one-third of all coffee. Brazilian beans typically offer nutty, chocolate notes with low acidity. The vast growing regions include Minas Gerais, São Paulo, and Bahia.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Central America</strong>: 
+                        <ul>
+                            <li><strong>Guatemala</strong>: Known for complex, full-bodied coffees with spice and chocolate notes. The Antigua region is especially renowned.</li>
+                            <li><strong>Costa Rica</strong>: Produces consistently clean, bright coffees with classic flavor profiles and excellent balance. Often showcases honey, vanilla, and citrus notes.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Africa</strong>: 
+                        <ul>
+                            <li><strong>Ethiopia</strong>: The birthplace of coffee, producing beans with distinctive floral and fruity notes. Key regions include Yirgacheffe, Sidamo, and Harrar, each with unique flavor profiles.</li>
+                            <li><strong>Kenya</strong>: Renowned for bright, fruity acidity with blackcurrant and berry notes. Kenyan coffees are processed using a unique fermentation method that contributes to their distinctive flavor.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Asia and Pacific</strong>: 
+                        <ul>
+                            <li><strong>Indonesia</strong>: Home to islands like Sumatra, Java, and Sulawesi that produce earthy, spicy, and herbal coffees with full body. The unique "wet-hulling" process contributes to their distinctive character.</li>
+                            <li><strong>Vietnam</strong>: The second-largest coffee producer globally, primarily growing Robusta. Vietnamese coffee is known for its strong, bold flavors, often served with sweetened condensed milk.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <p>Our coffee at Coffeto comes from smallholder farms in the highland regions of Colombia, where the perfect combination of altitude (1,200-1,800 meters), rainfall, and temperature creates beans with exceptional flavor complexity.</p>
+            </div>
+            
+            <div class="subsection">
+                <h3>Types of Coffee Beans</h3>
+                <div class="bean-comparison">
+                    <div class="bean-type">
+                        <h4>Arabica</h4>
+                        <svg class="bean-svg" viewBox="0 0 50 100">
+                            <ellipse cx="25" cy="50" rx="15" ry="45" fill="#8b5a2b" />
+                            <path d="M25,5 Q25,50 25,95" stroke="#6b4423" fill="none" stroke-width="1" />
+                        </svg>
+                        <p>Our choice at Coffeto. Arabica beans grow at higher elevations, develop more complex flavors, and contain less caffeine than Robusta. They offer a smoother, sweeter taste with notes of fruit, chocolate, and nuts.</p>
+                    </div>
+                    <div class="bean-type">
+                        <h4>Robusta</h4>
+                        <svg class="bean-svg" viewBox="0 0 50 100">
+                            <ellipse cx="25" cy="50" rx="18" ry="40" fill="#6b4423" />
+                            <path d="M25,10 Q25,50 25,90" stroke="#5a381d" fill="none" stroke-width="1" />
+                        </svg>
+                        <p>Robusta contains nearly twice the caffeine of Arabica and has a stronger, more bitter taste. These beans are hardier, grow at lower elevations, and are commonly used in espresso blends and instant coffee.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <h3>History of Coffee</h3>
+                <div class="history-content">
+                    <p>Coffee's discovery dates back to the 9th century in Ethiopia. Legend tells of a goat herder named Kaldi who noticed his goats becoming energetic after eating berries from a certain tree. Kaldi tried the berries himself and experienced a similar energy boost – thus began humanity's love affair with coffee.</p>
+                    <p><strong>Fun Fact:</strong> Coffee was once considered so powerful in the Arab world that it was banned in parts of the Middle East in the 16th century for its stimulating effects!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cultivation" class="cultivation">
+        <div class="container">
+            <h2>Coffee Cultivation & Processing</h2>
+            
+            <div class="subsection">
+                <h3>From Seed to Cup</h3>
+                <div class="cultivation-process">
+                    <div class="process-step" id="growing">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 100 100" class="step-svg">
+                                <rect x="45" y="60" width="10" height="30" fill="#6b4423" />
+                                <circle cx="50" cy="40" r="25" fill="#8fbc8f" />
+                                <path d="M50,20 Q60,35 50,50 Q40,35 50,20" fill="#6b4423" stroke="#6b4423" stroke-width="1" />
+                            </svg>
+                        </div>
+                        <h4>Growing</h4>
+                        <p>Coffee trees take 3-5 years to mature and produce cherries. They thrive in tropical climates at elevations between 900-2000 meters.</p>
+                    </div>
+                    
+                    <div class="process-step" id="harvesting">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 100 100" class="step-svg">
+                                <circle cx="50" cy="50" r="20" fill="#c0392b" />
+                                <path d="M50,30 Q60,50 50,70 Q40,50 50,30" fill="#2e7d32" stroke="#2e7d32" stroke-width="1" />
+                            </svg>
+                        </div>
+                        <h4>Harvesting</h4>
+                        <p>Cherries are hand-picked when ripe, with skilled pickers selecting only the perfectly red cherries for premium coffee.</p>
+                    </div>
+                    
+                    <div class="process-step" id="processing">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 100 100" class="step-svg">
+                                <rect x="30" y="40" width="40" height="30" rx="5" fill="#d4a76a" />
+                                <circle cx="40" cy="55" r="5" fill="#6b4423" />
+                                <circle cx="60" cy="55" r="5" fill="#6b4423" />
+                            </svg>
+                        </div>
+                        <h4>Processing</h4>
+                        <p>The cherries undergo either wet (washed) or dry (natural) processing to remove the fruit and reveal the beans inside.</p>
+                    </div>
+                    
+                    <div class="process-step" id="drying">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 100 100" class="step-svg">
+                                <rect x="20" y="60" width="60" height="10" fill="#8b5a2b" />
+                                <circle cx="30" cy="55" r="5" fill="#8b5a2b" />
+                                <circle cx="40" cy="55" r="5" fill="#8b5a2b" />
+                                <circle cx="50" cy="55" r="5" fill="#8b5a2b" />
+                                <circle cx="60" cy="55" r="5" fill="#8b5a2b" />
+                                <circle cx="70" cy="55" r="5" fill="#8b5a2b" />
+                                <path d="M30,30 L70,30" stroke="#f1c40f" stroke-width="3" />
+                                <path d="M25,40 L75,40" stroke="#f1c40f" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h4>Drying</h4>
+                        <p>Beans are dried in the sun on patios or raised beds until moisture content reaches about 11%.</p>
+                    </div>
+                    
+                    <div class="process-step" id="roasting">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 100 100" class="step-svg">
+                                <rect x="30" y="40" width="40" height="30" rx="5" fill="#6b4423" />
+                                <path d="M35,45 C45,35 55,35 65,45" stroke="#e67e22" stroke-width="2" fill="none" />
+                                <path d="M35,55 C45,45 55,45 65,55" stroke="#e67e22" stroke-width="2" fill="none" />
+                            </svg>
+                        </div>
+                        <h4>Roasting</h4>
+                        <p>Green beans are roasted at temperatures between 180-240°C, transforming them physically and chemically.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <h3>Processing Methods</h3>
+                <div class="processing-methods">
+                    <div class="method-card" id="washed">
+                        <h4>Washed Process</h4>
+                        <p>Cherries are mechanically depulped, fermented to remove the mucilage, then washed and dried. This method highlights brightness and clarity in the cup.</p>
+                    </div>
+                    
+                    <div class="method-card" id="natural">
+                        <h4>Natural Process</h4>
+                        <p>Whole cherries are dried with the fruit intact, allowing sugars to transfer to the bean. This creates a sweeter, fruitier profile with a heavier body.</p>
+                    </div>
+                    
+                    <div class="method-card" id="honey">
+                        <h4>Honey Process</h4>
+                        <p>A hybrid method where the skin is removed but some mucilage remains during drying. The result balances the clean taste of washed with some sweetness from naturals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="brewing-guide" class="brewing-guide">
+        <div class="container">
+            <h2>Brewing Guide</h2>
+            
+            <div class="subsection">
+                <h3>Extraction Methods</h3>
+                <div class="methods-grid">
+                    <div class="method">
+                        <h4>Espresso</h4>
+                        <svg class="method-svg" viewBox="0 0 100 100">
+                            <rect x="35" y="60" width="30" height="25" rx="2" fill="#4a2c2a" />
+                            <rect x="25" y="50" width="50" height="10" rx="2" fill="#6b4423" />
+                            <rect x="45" y="30" width="10" height="20" fill="#6b4423" />
+                            <rect x="40" y="20" width="20" height="10" rx="4" fill="#6b4423" />
+                        </svg>
+                        <div class="method-details">
+                            <p>Under high pressure, hot water is forced through finely-ground coffee, creating a concentrated shot with a layer of crema.</p>
+                            <ul class="tips">
+                                <li>Use very finely ground coffee</li>
+                                <li>Water temperature: 90-96°C</li>
+                                <li>25-30 seconds extraction time</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="method">
+                        <h4>Pour Over</h4>
+                        <svg class="method-svg" viewBox="0 0 100 100">
+                            <path d="M30,30 L45,80 L55,80 L70,30 Z" fill="none" stroke="#6b4423" stroke-width="2" />
+                            <ellipse cx="50" cy="30" rx="20" ry="5" fill="none" stroke="#6b4423" stroke-width="2" />
+                            <rect x="45" y="80" width="10" height="5" fill="#6b4423" />
+                        </svg>
+                        <div class="method-details">
+                            <p>Hot water is poured over coffee grounds in a filter, allowing gravity to extract flavors as it drips through.</p>
+                            <ul class="tips">
+                                <li>Use medium ground coffee</li>
+                                <li>Water temperature: 93-96°C</li>
+                                <li>Pour in spirals starting from center</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="method">
+                        <h4>French Press</h4>
+                        <svg class="method-svg" viewBox="0 0 100 100">
+                            <rect x="35" y="30" width="30" height="50" fill="none" stroke="#6b4423" stroke-width="2" />
+                            <rect x="40" y="20" width="20" height="10" fill="#6b4423" />
+                            <line x1="50" y1="20" x2="50" y2="40" stroke="#6b4423" stroke-width="2" />
+                            <line x1="40" y1="40" x2="60" y2="40" stroke="#6b4423" stroke-width="2" />
+                        </svg>
+                        <div class="method-details">
+                            <p>Coarse coffee grounds steep in hot water before being separated by pressing a metal filter down.</p>
+                            <ul class="tips">
+                                <li>Use coarse ground coffee</li>
+                                <li>Water temperature: 93-96°C</li>
+                                <li>4-minute brewing time</li>
+                                <li>Press plunger down slowly</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="method">
+                        <h4>Aeropress</h4>
+                        <svg class="method-svg" viewBox="0 0 100 100">
+                            <rect x="35" y="30" width="30" height="50" fill="none" stroke="#6b4423" stroke-width="2" />
+                            <rect x="38" y="30" width="24" height="15" fill="#d4a76a" />
+                            <rect x="40" y="15" width="20" height="15" fill="#6b4423" />
+                        </svg>
+                        <div class="method-details">
+                            <p>A versatile brewing method that uses pressure to extract flavors, combining elements of immersion and pressure brewing.</p>
+                            <ul class="tips">
+                                <li>Use medium-fine ground coffee</li>
+                                <li>Water temperature: 80-85°C</li>
+                                <li>1-2 minute brew time</li>
+                                <li>Press gently and consistently</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="method">
+                        <h4>Cold Brew</h4>
+                        <svg class="method-svg" viewBox="0 0 100 100">
+                            <rect x="30" y="20" width="40" height="60" rx="3" fill="none" stroke="#6b4423" stroke-width="2" />
+                            <rect x="35" y="30" width="30" height="40" fill="#d4a76a" opacity="0.7" />
+                            <circle cx="50" cy="80" r="2" fill="#6b4423" />
+                        </svg>
+                        <div class="method-details">
+                            <p>Coffee grounds steep in cold water for 12-24 hours, creating a smooth, low-acidity concentrate.</p>
+                            <ul class="tips">
+                                <li>Use coarse ground coffee</li>
+                                <li>Room temperature or cold water</li>
+                                <li>12-24 hour brewing time</li>
+                                <li>1:4 coffee to water ratio</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="method">
+                        <h4>Siphon</h4>
+                        <svg class="method-svg" viewBox="0 0 100 100">
+                            <circle cx="50" cy="30" r="15" fill="none" stroke="#6b4423" stroke-width="2" />
+                            <path d="M40,45 L50,60 L60,45" fill="none" stroke="#6b4423" stroke-width="2" />
+                            <ellipse cx="50" cy="70" rx="20" ry="10" fill="none" stroke="#6b4423" stroke-width="2" />
+                        </svg>
+                        <div class="method-details">
+                            <p>A theatrical brewing method using vapor pressure and vacuum to extract coffee, producing a clean, vibrant cup.</p>
+                            <ul class="tips">
+                                <li>Use medium-fine ground coffee</li>
+                                <li>Water temperature: near boiling</li>
+                                <li>45-90 second brew time</li>
+                                <li>Stir gently during brewing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <h3>Grind Sizes</h3>
+                <div class="grind-comparison">
+                    <div class="grind">
+                        <h4>Fine</h4>
+                        <div class="grind-visual fine-grind"></div>
+                        <p>Texture similar to table salt. Ideal for espresso machines, as the increased surface area allows quick extraction under pressure.</p>
+                    </div>
+                    
+                    <div class="grind">
+                        <h4>Medium</h4>
+                        <div class="grind-visual medium-grind"></div>
+                        <p>Texture similar to sand. Perfect for drip coffee makers, pour-over methods, and siphon brewers.</p>
+                    </div>
+                    
+                    <div class="grind">
+                        <h4>Coarse</h4>
+                        <div class="grind-visual coarse-grind"></div>
+                        <p>Texture similar to sea salt. Best for French press, cold brew, and percolators, where longer extraction times require larger particles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roast-types" class="roast-types">
+        <div class="container">
+            <h2>Roast Types</h2>
+            
+            <div class="roast-comparison">
+                <div class="roast">
+                    <h3>Light Roast</h3>
+                    <div class="roast-visual light-roast"></div>
+                    <div class="roast-info">
+                        <p>Light brown color with no oil on the surface. These beans preserve more of the original flavor characteristics of their growing region.</p>
+                        <ul>
+                            <li>Higher acidity</li>
+                            <li>More caffeine content</li>
+                            <li>Brighter, fruitier flavors</li>
+                            <li>Often described as: vibrant, tea-like, citrusy</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="roast">
+                    <h3>Medium Roast</h3>
+                    <div class="roast-visual medium-roast"></div>
+                    <div class="roast-info">
+                        <p>Medium brown color with balanced flavor, aroma, and acidity. The most popular roast in the United States.</p>
+                        <ul>
+                            <li>Balanced acidity</li>
+                            <li>Moderate caffeine content</li>
+                            <li>Caramel sweetness emerges</li>
+                            <li>Often described as: balanced, sweet, caramel</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="roast">
+                    <h3>Dark Roast</h3>
+                    <div class="roast-visual dark-roast"></div>
+                    <div class="roast-info">
+                        <p>Dark brown to almost black with an oily surface. Original bean characteristics are diminished and replaced by roast flavors.</p>
+                        <ul>
+                            <li>Low acidity</li>
+                            <li>Less caffeine content</li>
+                            <li>Bold, smoky flavors</li>
+                            <li>Often described as: chocolatey, nutty, smoky, bitter-sweet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tasting-notes" class="tasting-notes">
+        <div class="container">
+            <h2>Coffee Tasting Guide</h2>
+            
+            <div class="subsection">
+                <h3>How to Taste Coffee Like a Pro</h3>
+                <p>Coffee tasting, or "cupping," is the practice of observing the tastes and aromas of brewed coffee. Follow these steps to develop your palate:</p>
+                
+                <div class="tasting-steps">
+                    <div class="tasting-step" id="step1">
+                        <div class="step-number">1</div>
+                        <h4>Smell</h4>
+                        <p>First, inhale deeply from your coffee. Notice any aromas – they might be fruity, nutty, chocolatey, floral, or earthy.</p>
+                    </div>
+                    
+                    <div class="tasting-step" id="step2">
+                        <div class="step-number">2</div>
+                        <h4>Slurp</h4>
+                        <p>Take a spoonful and slurp it loudly. This spreads coffee across your palate and aerates it, enhancing flavors.</p>
+                    </div>
+                    
+                    <div class="tasting-step" id="step3">
+                        <div class="step-number">3</div>
+                        <h4>Locate</h4>
+                        <p>Where do you feel the coffee? Front of tongue (acidity), middle (sweetness), back (bitterness), or full mouth (body).</p>
+                    </div>
+                    
+                    <div class="tasting-step" id="step4">
+                        <div class="step-number">4</div>
+                        <h4>Describe</h4>
+                        <p>Use the tasting wheel below to help identify the specific flavors in your cup.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <h3>Flavor Wheel</h3>
+                <div class="flavor-wheel-container">
+                    <div class="flavor-wheel" id="flavor-wheel">
+                        <!-- Interactive flavor wheel will be rendered with JavaScript -->
+                    </div>
+                    <div class="flavor-description">
+                        <h4>Selected Flavor: <span id="selected-flavor">Click on the wheel</span></h4>
+                        <p id="flavor-info">Click different sections of the flavor wheel to learn about coffee taste attributes.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <h3>Coffeto's Flavor Profile</h3>
+                <p>Our Colombian beans feature a balanced profile with these prominent notes:</p>
+                <div class="our-flavors">
+                    <div class="flavor-tag" data-flavor="chocolate">Chocolate</div>
+                    <div class="flavor-tag" data-flavor="caramel">Caramel</div>
+                    <div class="flavor-tag" data-flavor="nutty">Toasted Nuts</div>
+                    <div class="flavor-tag" data-flavor="red-fruit">Red Berries</div>
+                    <div class="flavor-tag" data-flavor="citrus">Subtle Citrus</div>
+                </div>
+                <p class="tasting-cta">Experience these flavors for yourself! Try our coffee and start your own tasting notes journal.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="my-products" class="my-products">
+        <div class="container">
+            <h2>The <span class="coffeto-brand">Coffeto</span> Collection</h2>
+            <div class="products-content">
+                <div class="product-text">
+                    <p>Every <span class="coffeto-brand">Coffeto</span> bean tells a story – a story of Colombian highlands, of passionate farmers, and of our obsession with bringing you coffee perfection in every cup.</p>
+                    <p>What makes our coffee special? It's all in the details:</p>
                     <ul>
-                        <li>Hourly options available</li>
-                        <li>All sizes of luggage</li>
-                        <li>Central locations</li>
-                        <li>24/7 access available</li>
+                        <li>Directly sourced from small family farms in the Colombian highlands, where each bean is hand-picked at perfect ripeness</li>
+                        <li>Roasted in small batches to unlock the complex flavor profile that makes Colombian coffee world-famous</li>
+                        <li>Crafted with love by coffee enthusiasts who believe your morning cup should be an experience, not just a caffeine delivery</li>
+                        <li>Perfect balance of chocolatey richness, caramel sweetness, and just a hint of fruity brightness</li>
                     </ul>
-                </div>
-                <div class="price-card featured">
-                    <div class="popular-tag">Most Popular</div>
-                    <div class="price-icon"><i class="fas fa-hard-hat"></i></div>
-                    <h3>FIFO Workers</h3>
-                    <div class="price-tag">From $75/week</div>
-                    <ul>
-                        <li>Roster-friendly plans</li>
-                        <li>Personal locker options</li>
-                        <li>Vehicle storage add-ons</li>
-                        <li>Airport shuttle available</li>
-                    </ul>
-                </div>
-                <div class="price-card">
-                    <div class="price-icon"><i class="fas fa-car"></i></div>
-                    <h3>Vehicle Storage</h3>
-                    <div class="price-tag">From $15/day</div>
-                    <ul>
-                        <li>Cars, motorcycles, RVs</li>
-                        <li>Covered & uncovered options</li>
-                        <li>Regular maintenance checks</li>
-                        <li>Monthly discounts</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2>What Our Mates Say</h2>
-            <div class="testimonial-slider">
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                        <p>Perfect for my FIFO roster! I've been using DropBags for 6 months and it's made my life so much easier. No more lugging stuff back and forth to site.</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user-circle"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Mike Thompson</h4>
-                                <p>FIFO Mining Engineer</p>
-                            </div>
-                        </div>
+                    <p>Whether you're brewing your first cup of the day or sharing coffee moments with friends, <span class="coffeto-brand">Coffeto</span> transforms ordinary coffee time into something extraordinary.</p>
+                    <div class="cta">
+                        <a href="https://www.facebook.com/share/15rgwwEhpo/" target="_blank" class="cta-button">
+                            Experience <span class="coffeto-brand">Coffeto</span> Today
+                            <svg class="cta-icon" viewBox="0 0 24 24">
+                                <path d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/coffeto_aus?igshid=MW14MjBjNHphbzJueQ==" target="_blank" class="social-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                        <p>Made my Perth trip so easy! Dropped my bags off in the morning, explored the city all day, and picked them up before my evening flight. Brilliant service!</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user-circle"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Sarah Chen</h4>
-                                <p>International Traveler</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                        <p>The team at DropBags are legends! Super friendly, flexible with my changing roster, and their location is so convenient to the airport.</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user-circle"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Jason Kelly</h4>
-                                <p>FIFO Construction Worker</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2>Why We've Got Your Back</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>G'day! We're a team of Perth locals who saw a problem and decided to fix it. Too many FIFO workers and travelers were struggling with luggage on their journeys.</p>
-                    <p>Started in 2018 by two mates (one a former FIFO worker, one a travel enthusiast), DropBags has grown into Perth's most trusted luggage storage solution.</p>
-                    <p>We're not just about storing your stuff—we're about making your life easier and your travels smoother. No corporate jargon or fancy promises here—just honest, reliable service from people who get it.</p>
-                    <div class="stats">
-                        <div class="stat">
-                            <div class="stat-number">5000+</div>
-                            <div class="stat-label">Happy Customers</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">3</div>
-                            <div class="stat-label">Perth Locations</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">24/7</div>
-                            <div class="stat-label">Secure Storage</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0" y="0" width="400" height="300" fill="#F5F5F5"/>
-                        
-                        <!-- Storage facility illustration -->
-                        <rect x="50" y="50" width="300" height="200" rx="10" fill="#2E86AB" opacity="0.1"/>
-                        <rect x="70" y="70" width="50" height="70" rx="5" fill="#F49F0A" opacity="0.8"/>
-                        <rect x="130" y="70" width="50" height="70" rx="5" fill="#30C5FF" opacity="0.8"/>
-                        <rect x="190" y="70" width="50" height="70" rx="5" fill="#F49F0A" opacity="0.8"/>
-                        <rect x="250" y="70" width="50" height="70" rx="5" fill="#30C5FF" opacity="0.8"/>
-                        
-                        <rect x="70" y="150" width="50" height="70" rx="5" fill="#30C5FF" opacity="0.8"/>
-                        <rect x="130" y="150" width="50" height="70" rx="5" fill="#F49F0A" opacity="0.8"/>
-                        <rect x="190" y="150" width="50" height="70" rx="5" fill="#30C5FF" opacity="0.8"/>
-                        <rect x="250" y="150" width="50" height="70" rx="5" fill="#F49F0A" opacity="0.8"/>
-                        
-                        <!-- Team members -->
-                        <circle cx="100" cy="220" r="15" fill="#2A2B2A"/>
-                        <circle cx="200" cy="220" r="15" fill="#2A2B2A"/>
-                        <circle cx="300" cy="220" r="15" fill="#2A2B2A"/>
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="blog" class="blog">
-        <div class="container">
-            <h2>Storage Tips & Perth Guides</h2>
-            <div class="blog-posts">
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <i class="fas fa-suitcase-rolling"></i>
-                    </div>
-                    <div class="blog-content">
-                        <h3>5 Packing Tips for FIFO Life</h3>
-                        <p>Make your transitions between home and site smoother with these expert packing strategies...</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <div class="blog-content">
-                        <h3>Hands-Free in Perth: Day Trip Guide</h3>
-                        <p>Explore the best of Perth without lugging your bags around. Our favorite spots and routes...</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <div class="blog-content">
-                        <h3>Vehicle Storage 101: What to Know</h3>
-                        <p>Keep your car in top condition while you're away with these maintenance must-dos...</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-chevron-right"></i></a>
+                <div class="product-visual">
+                    <div class="coffee-bag">
+                        <svg viewBox="0 0 100 160" class="bag-svg">
+                            <path d="M30,40 L30,140 C30,150 70,150 70,140 L70,40 L50,20 Z" fill="#6b4423" />
+                            <rect x="35" y="50" width="30" height="40" rx="2" fill="#f1ece3" />
+                            <text x="40" y="65" font-family="Arial" font-size="6" fill="#6b4423">COFFETO</text>
+                            <text x="40" y="75" font-family="Arial" font-size="4" fill="#6b4423">Premium</text>
+                            <text x="40" y="85" font-family="Arial" font-size="4" fill="#6b4423">Colombian</text>
+                        </svg>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="coffee-quiz-section" class="coffee-quiz">
         <div class="container">
-            <h2>Let's Chat About Storage</h2>
-            <div class="contact-content">
-                <div class="contact-form">
-                    <form id="storageForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="What should we call you?">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Where should we reach you?">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone (optional)</label>
-                            <input type="tel" id="phone" name="phone" placeholder="For quick questions">
-                        </div>
-                        <div class="form-group">
-                            <label for="storage-needs">What are you looking to store?</label>
-                            <select id="storage-needs" name="storage-needs">
-                                <option value="">Select an option</option>
-                                <option value="traveler">Traveler Luggage</option>
-                                <option value="fifo">FIFO Worker Gear</option>
-                                <option value="vehicle">Vehicle</option>
-                                <option value="other">Something Else</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" placeholder="Tell us what you need!"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+            <h2>Test Your Coffee Knowledge</h2>
+            <div class="coffee-quiz-container" id="coffee-quiz">
+                <!-- Quiz will be generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="glossary" class="glossary">
+        <div class="container">
+            <h2>Coffee Glossary</h2>
+            
+            <div class="glossary-container">
+                <div class="glossary-item">
+                    <h3>Bloom</h3>
+                    <p>The initial release of carbon dioxide that occurs when hot water first contacts fresh coffee grounds, causing them to bubble and expand.</p>
                 </div>
-                <div class="contact-info">
-                    <div class="info-block">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Locations</h3>
-                            <p>Perth CBD: 123 Murray Street</p>
-                            <p>Airport: Terminal 2, Storage Zone</p>
-                            <p>Fremantle: 45 Market Street</p>
-                        </div>
-                    </div>
-                    <div class="info-block">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h3>Call Us</h3>
-                            <p>08 9123 4567 (7am-8pm daily)</p>
-                        </div>
-                    </div>
-                    <div class="info-block">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f69e939a9a99b69284998694979185869384829ed895999bd89783">[email&#160;protected]</a></p>
-                        </div>
-                    </div>
-                    <div class="info-block">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h3>Hours</h3>
-                            <p>Main Office: 7am-8pm Daily</p>
-                            <p>Airport: 24/7 Access</p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    </div>
+                
+                <div class="glossary-item">
+                    <h3>Body</h3>
+                    <p>The physical mouthfeel and weight of coffee on your palate. Described as light, medium, or full.</p>
+                </div>
+                
+                <div class="glossary-item">
+                    <h3>Crema</h3>
+                    <p>The golden-brown foam that forms on top of an espresso, created by emulsified coffee oils.</p>
+                </div>
+                
+                <div class="glossary-item">
+                    <h3>Cupping</h3>
+                    <p>The professional practice of observing the tastes and aromas of brewed coffee.</p>
+                </div>
+                
+                <div class="glossary-item">
+                    <h3>Extraction</h3>
+                    <p>The process of dissolving desirable coffee flavors from the grounds during brewing.</p>
+                </div>
+                
+                <div class="glossary-item">
+                    <h3>First Crack</h3>
+                    <p>The stage during roasting when beans make an audible cracking sound and begin developing their characteristic flavors.</p>
+                </div>
+                
+                <div class="glossary-item">
+                    <h3>Peaberry</h3>
+                    <p>A natural mutation of the coffee bean that grows as a single, smaller, rounder bean instead of the typical flat-sided pair.</p>
+                </div>
+                
+                <div class="glossary-item">
+                    <h3>Single Origin</h3>
+                    <p>Coffee sourced from a single farm, producer, region, or country, highlighting distinctive characteristics of that specific area.</p>
+                </div>
+                
+                <div class="glossary-item">
+                    <h3>TDS (Total Dissolved Solids)</h3>
+                    <p>The measure of the total amount of dissolved substances in coffee, which affects strength and extraction quality.</p>
+                </div>
+                
+                <div class="glossary-item">
+                    <h3>Third Wave</h3>
+                    <p>A movement in coffee culture focused on high-quality beans, direct trade, lighter roasts, and appreciation of coffee's terroir.</p>
                 </div>
             </div>
         </div>
@@ -406,53 +593,9 @@
 
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="40" height="40" rx="8" fill="#2E86AB"/>
-                        <rect x="10" y="15" width="20" height="18" rx="3" fill="#F49F0A"/>
-                        <rect x="15" y="12" width="10" height="4" rx="2" fill="#F49F0A"/>
-                        <circle cx="16" cy="22" r="2" fill="#ffffff"/>
-                        <circle cx="24" cy="22" r="2" fill="#ffffff"/>
-                        <path d="M16 28C18 30 22 30 24 28" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    <span>DropBags Perth</span>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#pricing">Pricing</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Resources</h4>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Storage Tips</a></li>
-                            <li><a href="#">Perth Guide</a></li>
-                            <li><a href="#">FIFO Resources</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Legal</h4>
-                        <ul>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Storage Insurance</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2023 DropBags Perth. All rights reserved.</p>
-            </div>
+            <p>&copy; 2023 <span class="coffeto-brand">Coffeto</span> Coffee Guide. All rights reserved.</p>
+            <p>Follow us on <a href="https://www.facebook.com/share/15rgwwEhpo/" target="_blank">Facebook</a></p>
         </div>
     </footer>
-
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
 </body>
 </html>
